@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+</head>
+<body>
+    <div class="vez" id="vez">
+        Jogador : 
+    </div>
+    <div id="principal">
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        <div class="quadrados" jogada=""></div>
+        
+    </div>
+    <div id="display" class="selected">
+        <div class="orga">
+            <span></span>
+            <button id="reload"> Reiniciar tabuleiro </button>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+    <style>
+        .vez{
+            text-align: center;
+            margin: 0 auto;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(0, 202, 135);
+            font-style: italic;
+            margin-top: 10px;
+       
+          }  
+          .quadrados{
+            height: 100px;
+            width: 100px;
+            background: rgb(0, 235, 137);
+            border: solid #000 1px;
+            display: flex;
+            align-items: center;
+            font-size: 57px;
+            font-weight: bold;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        #principal{
+            display: grid;
+            grid-template-columns: 100px 100px 100px ;
+            text-align: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            top: 100px;
+        }
+        .ballOrEx{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #display{
+            height: 100%;
+            width: 100%;
+            background: #000000a6;
+            position: absolute;
+            top: 0;
+        }
+        .selected{
+            display: none;
+        }
+        .orga span{
+            width: 100%;
+        }
+        .orga{
+            height: 100px;
+            background: #fff;
+            width: 250px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+            top: 184px;
+            position: relative;
+
+        }
+    </style>
+</body>
+</html>
